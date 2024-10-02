@@ -321,13 +321,13 @@ section {
   top: -44px;
 }
 #topbar .logo-info img {
-  width: 64px;
+  width: 80px;
 }
 #topbar .logo-info h3 {
   color: var(--color-inverse);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  margin-left: 10px;
+  margin-left: 3px;
   letter-spacing: 1px;
 }
 #topbar .logo-info h3 a {
