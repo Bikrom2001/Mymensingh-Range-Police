@@ -43,53 +43,61 @@
 </head>
 
 <body>
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="logo-info d-flex align-items-center">
-        <div>
-          <a href="index.html">
-            <img src="assets/img/HD-logo.png" alt="Home-logo" loading="lazy" />
-          </a>
+
+  <!-- ======= Header Section ======= -->
+   <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center gap-3">
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">CONTACT US</a>
+          <a href="#">DMP WEBSITE</a>
         </div>
-        <div>
-          <h3>
-            <a href="index.html"> MYMENSINGH RANGE POLICE</a>
-          </h3>
-          <h3 class="En-logo-name">
-            <a href="index.html">ময়মনসিংহ রেঞ্জ পুলিশ</a>
-          </h3>
-        </div>
-      </div>
-      <div class="d-none d-md-flex align-items-center justify-content-end mujib">
-        <!-- <a href="#">
-          <img src="assets/img/mujib.png" alt="mujib" loading="lazy" />
-        </a> -->
-        <div class="text-end top-date">
-          <h4>বুধবার</h4>
-        <h6>২রা অক্টোবর ২০২৪ ইং</h6>
-        <p>
-          ২৮শে রবিউল-আউয়াল ১৪৪৬ হিজরী, ১৭ই আশ্বিন ১৪৩১ বঙ্গাব্দ (শরৎকাল)
-        </p>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Top Bar -->
+    <!-- End Top Bar -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- <div class="logo">
-          <h1>
-            <a href="index.html">ACAD<span>EMY</span></a>
-          </h1>
-        </div> -->
-      <!-- start.navbar -->
-      <nav id="navbar" class="navbar">
+    <!-- Second Top Bar -->
+    <div class="topbar-second d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="logo-info d-flex align-items-center gap-3">
+          <div class="main-logo">
+          <a href="index.html">
+            <img class="img-fluid" src="assets/img/dmp_logo.jpg" alt="Mymensingh Range Police" loading="lazy" />
+          </a>
+        </div>
+        </div>
+        <div class="date-links d-none d-md-flex align-items-center">
+         <div class="text-end top-date">
+          <h4>বৃহস্পতিবার</h4>
+        <h6>৩রা অক্টোবর ২০২৪ ইং</h6>
+        <p>
+          ২৯শে রবিউল-আউয়াল ১৪৪৬ হিজরী, ১৮ই আশ্বিন ১৪৩১ বঙ্গাব্দ (শরৎকাল)
+        </p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- End second Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <!-- <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">Mymensingh Range Police</h1>
+        </a> -->
+
+         <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a class="nav-link scrollto active" title="হোম" href="index.html">হোম</a>
+            <a class="active" title="হোম" href="index.html">হোম</a>
           </li>
           <li class="dropdown">
             <a title="প্রশাসন" href="#"><span>প্রশাসন</span> <i class="bi bi-caret-down-fill"></i></a>
@@ -101,8 +109,8 @@
               <li><a href="Teacher.html">ইতিহাস</a></li>
             </ul>
           </li>
-           <li><a class="nav-link scrollto" href="notice.html">সিটিজেন চার্টার</a></li>
-           <li><a class="nav-link scrollto" href="notice.html">এপিএ</a></li>
+           <li><a href="notice.html">সিটিজেন চার্টার</a></li>
+           <li><a  href="notice.html">এপিএ</a></li>
           <li class="dropdown">
             <a title="প্রশাসন" href="#"><span>সেবা </span>
               <i class="bi bi-caret-down-fill"></i></a>
@@ -113,7 +121,7 @@
               <li><a href="#">তথ্য ডেস্ক</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="notice.html">মানবাধিকার</a></li>
+          <li><a  href="notice.html">মানবাধিকার</a></li>
           <li class="dropdown">
             <a title="ভর্তি" href="#"><span>আইজিপিরা </span> <i class="bi bi-caret-down-fill"></i></a>
             <ul>
@@ -127,18 +135,20 @@
               <li><a href="video.html">ভিডিও গ্যালারী</a></li>
             </ul>
           </li>
-          <!-- <li>
-            <a class="nav-link scrollto" href="#contact">সুবর্ণজয়ন্তী</a>
-          </li> -->
-          <li><a class="nav-link scrollto" href="Result.html">এনওসি এবং নোটিশ</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">যোগাযোগ </a></li>
+          <li><a  href="Result.html">এনওসি এবং নোটিশ</a></li>
+          <li><a  href="contact.html">যোগাযোগ </a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <!-- End.navbar -->
+
+      </div>
+
     </div>
+
   </header>
-  <!-- End Header -->
+
+  <!-- ======= End Header Section ======= -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
