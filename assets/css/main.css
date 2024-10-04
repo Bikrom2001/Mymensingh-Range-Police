@@ -37,6 +37,7 @@
   --nav-dropdown-hover-color: #008c7f;
   --main-header-background: #f0f0f0;
   --border-color: #dfdfdf;
+  --hover-color: #111;
 }
 .light-background {
   --background-color: #f5f9ff;
@@ -96,41 +97,38 @@ section {
 # Section Title
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
-  padding-bottom: 30px;
+  background: #f8f8f8;
+  margin: -20px;
+  padding: 18px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #eaeaea;
 }
-.section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
+.section-title .nb-title {
+  font-size: 18px;
+  line-height: 1;
   font-weight: 700;
-  padding: 8px 20px;
-  margin: 0;
-  background: var(--section-RGB-Background);
-  color: var(--color-primary);
-  display: inline-block;
   text-transform: uppercase;
-  border-radius: 50px;
-  font-family: var(--font-secondary);
+  margin-bottom: 0;
+  background: url(../img/nb-dots.png) repeat;
+  height: 16px;
+  color: #009087;
 }
-.section-title h3 {
-  margin: 15px 0 0 0;
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--text-tittle-color);
+.section-title .nb-title a,
+.section-title .nb-title span {
+  background: #f8f8f8;
+  padding-right: 11px;
+  line-height: 20px;
+  float: left;
+  position: relative;
+  top: -3px;
 }
-
-.section-title h3 span {
-  color: var(--color-primary);
-}
-.section-title p {
-  margin: 15px auto 0 auto;
-  font-weight: 600;
-}
-
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 76%;
-  }
+.base-box {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 21px;
+  position: relative;
+  border-color: #eaeaea;
 }
 
 /*--------------------------------------------------------------
@@ -881,6 +879,115 @@ section {
 .leastNotice .notice-top-content a i {
   color: var(--color-primary);
   font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# least news Section
+--------------------------------------------------------------*/
+.news-box.base-box {
+  padding-bottom: 0;
+}
+.base-box .base-box {
+  border-color: #eaeaea;
+}
+.news-box .nb-content {
+  position: relative;
+}
+.nb-style1 .recent-news {
+  margin: 0 -20px;
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+.news-box .recent-news {
+  overflow: hidden;
+}
+.news-box .recent-news h3 {
+  font-size: 17px;
+}
+.news-box .recent-news h3 a {
+  line-height: 1.3em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 7px;
+  color: #009087;
+}
+.news-box .recent-news h3 a:hover {
+  color: var(--hover-color);
+}
+.nb-style1 .recent-news .news-image {
+  float: left;
+  width: 170px;
+  margin-right: 20px;
+}
+.news-box .news-image {
+  position: relative;
+}
+.news-box img.disappear.appear {
+  width: inherit !important;
+  height: inherit !important;
+  padding-right: 10px;
+}
+.news-box .news-summary p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.base-box .read-more-link {
+  color: #009087 !important;
+}
+.base-box .read-more-link i {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0px;
+}
+.nb-style1 .nb1-older-articles {
+  margin: 0 -20px;
+  padding: 20px;
+  background: #f8f8f8;
+}
+.nb-style1 .nb1-older-articles ul.two-cols {
+  position: relative;
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  column-count: 2;
+  column-gap: 40px;
+}
+.news-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nb-style1 .nb1-older-articles ul.two-cols:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  border-right: 1px dotted #bfbfbf;
+}
+.nb-style1 .nb1-older-articles ul li {
+  padding: 5px 0;
+  padding-left: 18px;
+  line-height: 1.1em;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.news-box .nb1-older-articles ul li i {
+  color: #9e9e9e;
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+  margin-left: -18px;
+}
+.news-box .nb1-older-articles ul li a {
+  color: #40454d;
+}
+.news-box .nb1-older-articles ul li a:hover {
+  color: var(--hover-color);
 }
 
 /*--------------------------------------------------------------
