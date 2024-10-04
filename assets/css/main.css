@@ -36,6 +36,7 @@
   --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #008c7f;
   --main-header-background: #f0f0f0;
+  --border-color: #dfdfdf;
 }
 .light-background {
   --background-color: #f5f9ff;
@@ -58,9 +59,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  color: var(--color-default);
-  background-color: var(--color-background);
-  font-family: var(--font-default);
+  color: #000000;
+  background: url(../img/bg.jpg);
+  font-family: var(--font-primary);
+  overflow-x: hidden;
 }
 
 a {
@@ -240,7 +242,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--color-primary);
+  background: var(--accent-color);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -679,7 +681,7 @@ section {
   padding: 0;
   position: relative;
   background-color: #002f50;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   overflow: hidden;
 }
 #hero .carousel-item {
@@ -787,25 +789,41 @@ section {
 
 @media (max-height: 500px) {
   #hero {
-    height: 150vh;
+    /* height: 150vh; */
   }
 
   #hero .carousel-item {
-    height: 150vh;
+    /* height: 150vh; */
   }
 }
+/*--------------------------------------------------------------
+# Ondive shadow
+--------------------------------------------------------------*/
+.nav-shaddow {
+  background: url(../img/nav-shadow.png) no-repeat;
+  width: 963px;
+  height: 19px;
+  margin: 0 auto;
+  margin-top: -2px;
+  position: relative;
+  z-index: 1;
+}
+
 /*--------------------------------------------------------------
 # least notices
 --------------------------------------------------------------*/
 .leastNotice {
   padding: 0px 0px;
 }
+.leastNotice .leastNotice-container {
+  border: 1px solid var(--border-color);
+}
 .leastNotice .notice-top {
   display: inline-block;
   position: relative;
-  background-color: rgb(0 71 42);
+  background-color: #bb0000;
   height: 42px;
-  padding: 0 20px;
+  padding: 0px;
   line-height: 42px;
   width: 100%;
   text-align: center;
@@ -814,18 +832,35 @@ section {
   justify-content: center;
   align-items: center;
 }
+.leastNotice .notice-top:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(187, 0, 0, 0);
+  border-left-color: #b00;
+  border-width: 20px;
+  margin-top: -20px;
+  z-index: 1;
+  border-left-width: 10px;
+}
 .leastNotice .notice-top h4 {
-  color: var(--color-inverse);
+  color: var(--contrast-color);
   font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 0;
+  font-size: 19px;
+  margin: 0px;
+  padding: 0px;
 }
 .leastNotice .notice-top-content {
   display: inline-block;
   position: relative;
-  background-color: #e3e3e3;
+  background-color: var(--contrast-color);
   height: 42px;
-  padding: 0 20px;
+  padding: 0px 7px 0px 12px;
   line-height: 42px;
   width: 100%;
   text-transform: uppercase;
@@ -1397,111 +1432,54 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  border-top: 2px solid var(--color-primary);
+  border-top: 4px solid #373c43;
+  background-color: #008c7f;
+  color: var(--contrast-color);
 }
 .footer .footer-content {
-  background-color: #151515;
+  background-color: #008c7f;
   background-size: contain;
-  padding: 60px 0 30px 0;
-  color: #808080;
+  padding: 30px 0 20px 0;
+  color: var(--contrast-color);
 }
 .footer .footer-content .footer-info {
   margin-bottom: 30px;
-}
-.footer .footer-content .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 25px;
-  color: var(--color-inverse);
-}
-.footer .footer-content .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-.footer .footer-content .footer-info .logo span {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--color-inverse);
-  font-family: var(--font-secondary);
-  margin-top: 3px;
-}
-.footer .footer-content .footer-info p {
-  font-size: 15px;
-  margin-bottom: 0;
+  text-align: center;
   font-family: var(--font-primary);
-  color: #808080;
 }
-.footer .footer-content .social-links a {
-  font-size: 14px;
-  line-height: 0;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  color: rgba(27, 47, 69, 0.5);
-  margin-right: 10px;
-  transition: 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-primary);
-  color: var(--color-inverse);
-  border-radius: 50px;
-}
-.footer .footer-content .social-links a:hover {
-  background-color: #38618e;
-}
-.footer .footer-content h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--color-inverse);
-  position: relative;
-  padding-bottom: 12px;
-}
-.footer .footer-content .footer-links {
-  margin-bottom: 30px;
-}
-.footer .footer-content .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #808080;
-}
-.footer .footer-content .footer-links ul i {
-  margin-right: 2px;
-  color: var(--color-primary);
-  font-size: 16px;
-  line-height: 0;
-}
-.footer .footer-content .footer-links ul li {
-  padding: 7px 0;
-  display: flex;
-  align-items: center;
-}
-.footer .footer-content .footer-links ul li:first-child {
-  padding-top: 0;
-}
-.footer .footer-content .footer-links ul a {
-  color: #808080;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
+.footer .footer-content .footer-info span {
+  color: #faff00;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 3px;
+  display: block;
 }
 
-.footer .footer-content .footer-links ul a:hover {
-  color: var(--color-primary);
+.footer .footer-content .footer-info h4 {
+  font-weight: 600;
+  font-size: 20px;
 }
-.footer .footer-content .footer-contact p {
-  line-height: 26px;
-  color: #808080;
+.footer .footer-content .footer-info p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.footer .copyright-section h6 {
+  font-size: 19px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+.footer .copyright-section h6 .email:hover {
+  color: var(--default-color);
 }
 .footer .footer-legal {
-  background: #1d2023;
-  padding: 20px 0;
+  background: #008c7f;
+  padding-bottom: 20px;
 }
 .footer .footer-legal .copyright {
   text-align: center;
   color: var(--color-inverse);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* !--About us Pages */
