@@ -8,15 +8,15 @@
 */
 /* Fonts */
 @font-face {
-  font-family: "solaimanlipi";
-  src: url("../Font/solaimanlipi/SolaimanLipi_22-02-2012.ttf");
+  font-family: 'solaimanlipi';
+  src: url('../Font/solaimanlipi/SolaimanLipi_22-02-2012.ttf');
 }
 :root {
-  --font-default: "solaimanlipi", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "solaimanlipi", sans-serif;
-  --font-secondary: "Hind Siliguri", sans-serif;
+  --font-default: 'solaimanlipi', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-primary: 'solaimanlipi', sans-serif;
+  --font-secondary: 'Hind Siliguri', sans-serif;
 }
 
 /* Global Colors */
@@ -178,7 +178,7 @@ section {
 .home-modal-box .php-email-form textarea {
   padding: 10px 12px;
 }
-.home-modal-box .php-email-form button[type="submit"] {
+.home-modal-box .php-email-form button[type='submit'] {
   background: var(--color-primary);
   border: 0;
   padding: 6px 23px;
@@ -188,7 +188,7 @@ section {
   font-weight: 600;
   font-family: var(--font-secondary);
 }
-.home-modal-box .php-email-form button[type="submit"]:hover {
+.home-modal-box .php-email-form button[type='submit']:hover {
   color: var(--text-tittle-color);
 }
 /*--------------------------------------------------------------
@@ -206,7 +206,7 @@ section {
 }
 #preloader:before,
 #preloader:after {
-  content: "";
+  content: '';
   position: absolute;
   border: 4px solid var(--color-primary);
   border-radius: 50%;
@@ -277,7 +277,7 @@ section {
   background-repeat: no-repeat;
 }
 .breadcrumbs:before {
-  content: "";
+  content: '';
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   inset: 0;
@@ -314,7 +314,7 @@ section {
   display: inline-block;
   padding-right: 10px;
   color: #fff;
-  content: "/";
+  content: '/';
 }
 
 /*--------------------------------------------------------------
@@ -695,7 +695,7 @@ section {
   position: relative;
 }
 #hero .carousel-item::before {
-  content: "";
+  content: '';
   background-color: rgba(0, 0, 0, 0.6);
   /* background: linear-gradient(90deg, #2f57ef, #b966e7); */
   opacity: 0.4;
@@ -838,7 +838,7 @@ section {
   left: 100%;
   top: 50%;
   border: solid transparent;
-  content: " ";
+  content: ' ';
   height: 0;
   width: 0;
   position: absolute;
@@ -970,7 +970,7 @@ section {
 }
 .nb-style1 .nb1-older-articles ul.two-cols:before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 50%;
   height: 100%;
@@ -1028,7 +1028,7 @@ section {
   position: relative;
 }
 .scrolling-box:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   height: 100%;
@@ -1037,7 +1037,7 @@ section {
   z-index: 10;
 }
 .scrolling-box:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 30px;
@@ -1206,9 +1206,9 @@ section {
   margin: 3px 0;
   padding: 3px 0;
 }
-.cat-post-item:last-child{
-   border-bottom: none;
-   margin-bottom: 0;
+.cat-post-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 .widget ul li a {
   color: #2d2d2d;
@@ -1217,7 +1217,50 @@ section {
   display: inline-block;
   font-size: 16px;
 }
-
+.tagcloud {
+  overflow: hidden;
+  margin-right: 5px;
+  margin-bottom: -5px;
+  text-align: center !important;
+}
+.tagcloud a {
+  float: none !important;
+  line-height: 29px;
+  padding: 3px !important;
+  background: #f8f8f8;
+  border: 1px solid #eaeaea;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  text-transform: capitalize;
+  color: #969696;
+  font-size: 14px !important;
+}
+.tagcloud a:hover {
+  color: var(--hover-color);
+}
+.widget .counter_single_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 28px;
+  border-bottom: 3px solid #009087;
+}
+.widget .counter_single_wrap_middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 28px;
+  border-bottom: 3px solid #faff00;
+}
+.widget .counter_single_wrap_yesterday {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 28px;
+}
 /*--------------------------------------------------------------
 # slider for side bar
 --------------------------------------------------------------*/
@@ -1320,7 +1363,7 @@ section {
   color: #aaaaaa;
 }
 #notice .notice-title h4::after {
-  content: "";
+  content: '';
   width: 120px;
   height: 1px;
   display: inline-block;
@@ -1729,7 +1772,7 @@ section {
   overflow: hidden;
 }
 #videos .play-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1743,7 +1786,7 @@ section {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 #videos .play-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 100px;
@@ -2044,7 +2087,7 @@ section {
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type='submit'] {
   background: var(--color-primary);
   border: 0;
   padding: 6px 30px;
@@ -2055,7 +2098,7 @@ section {
   font-family: var(--font-secondary);
   margin-top: 20px;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type='submit']:hover {
   background: var(--text-tittle-color);
 }
 /*--------------------------------------------------------------
@@ -2248,7 +2291,7 @@ section {
 .onlineAdmission .php-email-form select {
   height: 44px;
 }
-.onlineAdmission .php-email-form input[type="checkbox"] {
+.onlineAdmission .php-email-form input[type='checkbox'] {
   height: 0px !important;
   padding: 8px !important;
   width: 1em !important;
@@ -2267,7 +2310,7 @@ section {
 #onlineAdmission .php-email-form textarea {
   padding: 12px 15px;
 }
-#onlineAdmission .php-email-form button[type="submit"] {
+#onlineAdmission .php-email-form button[type='submit'] {
   background: var(--color-primary);
   border: 0;
   padding: 6px 30px;
@@ -2278,7 +2321,7 @@ section {
   font-family: var(--font-secondary);
   margin-top: 20px;
 }
-#onlineAdmission .php-email-form button[type="submit"]:hover {
+#onlineAdmission .php-email-form button[type='submit']:hover {
   background: var(--text-tittle-color);
 }
 #onlineAdmission .php-email-form .payment-note {
