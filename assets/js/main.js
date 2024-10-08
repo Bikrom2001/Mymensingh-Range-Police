@@ -21,7 +21,7 @@
       !selectHeader.classList.contains('fixed-top')
     )
       return;
-    window.scrollY > 100
+    window.scrollY > 400
       ? selectBody.classList.add('scrolled')
       : selectBody.classList.remove('scrolled');
   }
@@ -107,7 +107,7 @@
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);
       if (!section) return;
-      let position = window.scrollY + 200;
+      let position = window.scrollY + 400;
       if (
         position >= section.offsetTop &&
         position <= section.offsetTop + section.offsetHeight
@@ -279,10 +279,10 @@
     loop: true,
     spaceBetween: 10,
     slidesPerView: 6, // Number of thumbnails
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       350: {
         slidesPerView: 2, // On small screens
@@ -307,10 +307,10 @@
   let swiper2 = new Swiper('.mySwiper2', {
     loop: true,
     spaceBetween: 10, // Space between main images
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next', // Make sure you have these buttons in your HTML
       prevEl: '.swiper-button-prev',
