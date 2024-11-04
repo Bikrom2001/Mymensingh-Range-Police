@@ -80,11 +80,9 @@
         </div>
         <div class="date-links d-none d-md-flex align-items-center">
           <div class="text-end top-date">
-            <h4>বৃহস্পতিবার</h4>
-            <h6>৩রা অক্টোবর ২০২৪ ইং</h6>
-            <p>
-              ২৯শে রবিউল-আউয়াল ১৪৪৬ হিজরী, ১৮ই আশ্বিন ১৪৩১ বঙ্গাব্দ (শরৎকাল)
-            </p>
+            <h4 id="day-name"></h4>
+            <h6 id="gregorian-date"></h6>
+            <p id="bengali-hijri-date"></p>
           </div>
         </div>
       </div>
@@ -1555,11 +1553,14 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
+
+
   <!-- owl css -->
   <script src="assets/vendor/Owl/owl.carousel.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/time.js"></script>
   <script>
     jQuery(document).ready(function ($) {
       var rtl = false;
@@ -1587,6 +1588,8 @@
       });
     });
   </script>
+
+
 </body>
 
 </html>
