@@ -66,7 +66,7 @@ document.getElementById(
   'gregorian-date'
 ).innerText = `${convertToBengaliNumerals(
   today.getDate()
-)} ঠা ${new Intl.DateTimeFormat('bn-BD', { month: 'long' }).format(
+)} ঠা${new Intl.DateTimeFormat('bn-BD', { month: 'long' }).format(
   today
 )} ${convertToBengaliNumerals(today.getFullYear())} ইং`;
 document.getElementById(
