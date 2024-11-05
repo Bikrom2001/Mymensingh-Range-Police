@@ -50,53 +50,50 @@
 
 <body>
     <!-- ======= Header Section ======= -->
+    <div class="topbar d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center gap-3">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">DMP WEBSITE</a>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+    <!-- Second Top Bar -->
+    <div class="topbar-second d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="logo-info d-flex align-items-center gap-3">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img class="img-fluid" src="assets/img/Main-logo.png" alt="Mymensingh Range Police"
+                            loading="lazy" />
+                    </a>
+                </div>
+            </div>
+            <div class="date-links d-none d-md-flex align-items-center">
+                <div class="text-end top-date">
+                    <h4 id="day-name"></h4>
+                    <h6 id="gregorian-date"></h6>
+                    <p id="bengali-hijri-date"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End second Top Bar -->
+
     <header id="header" class="header sticky-top">
-        <div class="topbar d-flex align-items-center">
-            <div class="container d-flex justify-content-center justify-content-md-between">
-                <div class="contact-info d-flex align-items-center gap-3">
-                    <a href="#">PRIVACY POLICY</a>
-                    <a href="#">CONTACT US</a>
-                    <a href="#">DMP WEBSITE</a>
-                </div>
-                <div class="social-links d-none d-md-flex align-items-center">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-        <!-- End Top Bar -->
-
-        <!-- Second Top Bar -->
-        <div class="topbar-second d-flex align-items-center">
-            <div class="container d-flex justify-content-center justify-content-md-between">
-                <div class="logo-info d-flex align-items-center gap-3">
-                    <div class="main-logo">
-                        <a href="index.html">
-                            <img class="img-fluid" src="assets/img/Main-logo.png" alt="Mymensingh Range Police"
-                                loading="lazy" />
-                        </a>
-                    </div>
-                </div>
-                <div class="date-links d-none d-md-flex align-items-center">
-                    <div class="text-end top-date">
-                        <h4>বৃহস্পতিবার</h4>
-                        <h6>৩রা অক্টোবর ২০২৪ ইং</h6>
-                        <p>
-                            ২৯শে রবিউল-আউয়াল ১৪৪৬ হিজরী, ১৮ই আশ্বিন ১৪৩১ বঙ্গাব্দ (শরৎকাল)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End second Top Bar -->
-
         <div class="branding d-flex align-items-cente">
             <div class="container position-relative d-flex align-items-center justify-content-between">
                 <!-- <a href="index.html" class="logo d-flex align-items-center">
-          <h1 class="sitename">Mymensingh Range Police</h1>
-        </a> -->
+              <h1 class="sitename">Mymensingh Range Police</h1>
+            </a> -->
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
@@ -515,12 +512,15 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/AhmedMRaihan/BanglaDateJS@master/src/buetDateTime.js"></script>
 
     <!-- owl css -->
     <script src="assets/vendor/Owl/owl.carousel.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/time.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             var rtl = false;
