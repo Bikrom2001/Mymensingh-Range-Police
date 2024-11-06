@@ -31,7 +31,7 @@ document.getElementById(
   'gregorian-date'
 ).innerText = `${convertToBengaliNumerals(
   today.getDate()
-)} ${new Intl.DateTimeFormat('bn-BD', { month: 'long' }).format(
+)}ই  ${new Intl.DateTimeFormat('bn-BD', { month: 'long' }).format(
   today
 )} ${convertToBengaliNumerals(today.getFullYear())} ইং`;
 // document.getElementById(
@@ -156,13 +156,57 @@ function convertToBanglaDate(dateString) {
   }`;
 }
 
+function getBengaliSeason() {
+  const now = new Date();
+  const month = now.getMonth() + 1; // JavaScript months are 0-11, so we add 1 for convenience
+  const day = now.getDate();
+
+  // Map months and days to Bengali seasons
+  if ((month === 4 && day >= 15) || month === 5 || (month === 6 && day <= 15)) {
+    return 'গ্রীষ্মকাল'; // Summer
+  } else if (
+    (month === 6 && day >= 16) ||
+    month === 7 ||
+    (month === 8 && day <= 15)
+  ) {
+    return 'বর্ষাকাল'; // Rainy Season
+  } else if (
+    (month === 8 && day >= 16) ||
+    month === 9 ||
+    (month === 10 && day <= 15)
+  ) {
+    return 'শরৎকাল'; // Autumn
+  } else if (
+    (month === 10 && day >= 16) ||
+    month === 11 ||
+    (month === 12 && day <= 15)
+  ) {
+    return 'হেমন্তকাল'; // Late Autumn
+  } else if (
+    (month === 12 && day >= 16) ||
+    month === 1 ||
+    (month === 2 && day <= 15)
+  ) {
+    return 'শীতকাল'; // Winter
+  } else if (
+    (month === 2 && day >= 16) ||
+    month === 3 ||
+    (month === 4 && day <= 14)
+  ) {
+    return 'বসন্তকাল'; // Spring
+  }
+
+  return 'অজানা ঋতু'; // Unknown Season (Fallback)
+}
+
 const englishDate =
   'Sat Feb 10 2024 15:33:51 GMT+0600 (Bangladesh Standard Time)';
 const banglaDate = convertToBanglaDate(englishDate);
 console.log(banglaDate);
 
-let dateConverted = new buetDateConverter().convert('jশে F, Y (বঙ্গাব্দ )');
+let dateConverted = new buetDateConverter().convert('jশে F, Y বঙ্গাব্দ ');
 
 document.getElementById(
   'bengali-hijri-date'
-).innerText = `${day}রা ${monthName} ${year} হিজরী, ${dateConverted}`;
+).innerText = `${day}রা ${monthName} ${year} হিজরী, ${dateConverted}(${getBengaliSeason()})`;
+
