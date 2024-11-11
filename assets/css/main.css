@@ -268,7 +268,7 @@ section {
   background-color: var(--main-header-background);
   border-bottom: 1px solid #dfdfdf;
   min-height: 60px;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 .header .logo {
@@ -321,7 +321,7 @@ section {
 .topbar-second .top-date h6 {
   font-family: var(--font-secondary);
   color: var(--color-inverse);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 3px;
 }
 .topbar-second .top-date p {
@@ -331,6 +331,91 @@ section {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+/* .nav-buttons-sr {
+  position: absolute;
+  right: 0;
+} */
+.nav-Search {
+  position: relative;
+  float: left;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-left-width: 0;
+  border-top: 0;
+  border-bottom: 0;
+  height: 60px;
+  min-width: 67px;
+  text-align: center;
+  font-size: 16px;
+  color: #4a525d;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left-width: 1px !important;
+  border-bottom-width: 1px !important;
+  border-top-width: 1px !important;
+}
+.nav-Search i {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.nb-inner-wrap.sw-show {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.nb-inner-wrap {
+  position: absolute;
+  width: 306px;
+  line-height: 1.7;
+  right: 0px;
+  top: 100%;
+  z-index: 1000;
+  opacity: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+}
+.nb-inner-wrap .nb-inner {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+}
+.nb-inner-wrap .search-form {
+  overflow: hidden;
+  position: relative;
+}
+.nb-inner-wrap .search-form input {
+  width: 229px;
+  float: left;
+  border-right-width: 0;
+  margin-bottom: 0;
+}
+.nb-inner-wrap input {
+  height: 40px;
+  padding: 0 8px;
+  background: #f8f8f8;
+  border: 1px solid #eaeaea;
+  border-radius: 0;
+  color: #222;
+}
+.nb-inner-wrap .search-form .button {
+  line-height: 40px;
+  float: left;
+  width: 45px;
+  display: inline-block;
+  padding: 0 16px;
+  border: 0;
+  background: #4a525d;
+  color: #ffffff;
+  font-weight: 400;
+  border-style: solid;
+  border-width: 0;
+}
+
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
   .navmenu {
@@ -343,15 +428,22 @@ section {
     display: flex;
     list-style: none;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .navmenu li {
     position: relative;
+    background-color: #fff;
+    border-left-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-top-width: 1px !important;
+    border: 0px solid #dfdfdf;
+    font-size: 15px;
   }
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #373c43;
     padding: 18px 15px;
     font-size: 15px;
     font-family: var(--nav-font);
@@ -363,6 +455,11 @@ section {
     transition: 0.3s;
   }
 
+  .navmenu .menu-search {
+    font-size: 23px;
+    font-weight: 700;
+    position: relative;
+  }
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -371,19 +468,20 @@ section {
     transition: 0.3s;
   }
 
-  .navmenu li:last-child a {
+  /* .navmenu li:last-child a {
     padding-right: 0;
-  }
+  } */
 
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--contrast-color);
+    background: #009688;
   }
 
   .navmenu .dropdown ul {
     margin: 0;
-    padding: 10px 0;
+    padding: 0px 0;
     background: var(--nav-dropdown-background-color);
     display: block;
     position: absolute;
@@ -415,7 +513,8 @@ section {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover > a {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--contrast-color);
+    background: #009688;
   }
 
   .navmenu .dropdown:hover > ul {

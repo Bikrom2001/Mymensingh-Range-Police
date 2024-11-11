@@ -33,7 +33,7 @@
   <!-- owl -->
   <link rel="stylesheet" href="assets/vendor/Owl/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/vendor/Owl/owl.theme.default.min.css" />
-  
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
@@ -90,7 +90,7 @@
 
   <header id="header" class="header sticky-top">
     <div class="branding d-flex align-items-cente">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
+      <div class="container position-relative d-flex align-items-md-start align-items-center justify-content-between">
         <!-- <a href="index.html" class="logo d-flex align-items-center">
           <h1 class="sitename">Mymensingh Range Police</h1>
         </a> -->
@@ -98,48 +98,59 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a class="active" title="হোম" href="index.html">হোম</a>
+              <a class="active" title="হোম" href="index.html">প্রচ্ছদ</a>
             </li>
+            <li><a href="newsDetails.html">আজকের সংবাদ</a></li>
+            <li><a href="newsDetails.html">জাতীয়</a></li>
+            <li><a href="notice.html">পুলিশ</a></li>
+            <li><a href="notice.html">অপরাধ</a></li>
+            <li><a href="notice.html">অর্থনীতি</a></li>
+            <li><a href="Result.html">আন্তর্জাতিক</a></li>
+            <li><a href="contact.html">খেলাধুলা </a></li>
+            <li><a href="contact.html">তথ্য প্রযুক্তি </a></li>
+            <li><a href="contact.html">বিনোদন </a></li>
+            <li><a href="contact.html">যাদের জন্য গর্বিত </a></li>
+            <li><a href="contact.html">ট্রাফিক কর্নার </a></li>
+            <li><a href="contact.html">গ্রেফতারে সহায়তা </a></li>
+            <li><a href="contact.html">জব কর্নার </a></li>
+            <li><a href="contact.html">লস্ট এন্ড ফাউন্ড </a></li>
+            <li><a href="contact.html">অসনাক্ত মৃতদেহ </a></li>
+            <li><a href="contact.html">কেস ফলো-আপ </a></li>
+            <li><a href="contact.html">জানা অজানা </a></li>
+
+            <li><a href="contact.html">লাইফ স্টাইল </a></li>
             <li class="dropdown">
-              <a title="প্রশাসন" href="#"><span>প্রশাসন</span> <i class="bi bi-caret-down-fill"></i></a>
+              <a title="প্রশাসন" href="#"><span>অন্যান্য </span> <i class="bi bi-caret-down-fill"></i></a>
               <ul>
-                <li><a href="Teacher.html">কর্মকর্তা-তালিকা</a></li>
-                <li><a href="Teacher.html">অর্গানোগ্রাম</a></li>
-                <li><a href="Teacher.html">কর্মজীবন</a></li>
-                <li><a href="Teacher.html">পদমর্যাদা</a></li>
-                <li><a href="Teacher.html">ইতিহাস</a></li>
+                <li><a href="photos.html">ভর্তি তথ্য</a></li>
+                <li><a href="video.html">সাহিত্য ও সংস্কৃতি</a></li>
+                <li><a href="video.html">ভিডিও</a></li>
+                <li><a href="video.html">যোগাযোগ</a></li>
+                <li><a href="video.html">দরপত্র বিজ্ঞপ্তি</a></li>
+                <li><a href="video.html">প্রেসবক্স</a></li>
               </ul>
             </li>
-            <li><a href="newsDetails.html">সিটিজেন চার্টার</a></li>
-            <li><a href="notice.html">এপিএ</a></li>
-            <li class="dropdown">
-              <a title="প্রশাসন" href="#"><span>সেবা </span> <i class="bi bi-caret-down-fill"></i></a>
-              <ul>
-                <li><a href="#">বিট পুলিশিং</a></li>
-                <li><a href="#">অনলাইন পুলিশ ক্লিয়ারেন্স</a></li>
-                <li><a href="#">খবর</a></li>
-                <li><a href="#">তথ্য ডেস্ক</a></li>
-              </ul>
-            </li>
-            <li><a href="notice.html">মানবাধিকার</a></li>
-            <li class="dropdown">
-              <a title="ভর্তি" href="#"><span>আইজিপিরা </span> <i class="bi bi-caret-down-fill"></i></a>
-              <ul>
-                <li><a href="admission_School.html">সাবেক আইজিপিরা</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a title="প্রশাসন" href="#"><span>গ্যালারী </span> <i class="bi bi-caret-down-fill"></i></a>
-              <ul>
-                <li><a href="photos.html">ফটোগ্যালারী</a></li>
-                <li><a href="video.html">ভিডিও গ্যালারী</a></li>
-              </ul>
-            </li>
-            <li><a href="Result.html">এনওসি এবং নোটিশ</a></li>
-            <li><a href="contact.html">যোগাযোগ </a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
         </nav>
+        <div class="nav-buttons-sr">
+          <div class="nav-Search">
+            <i class="bi bi-search menu-search" onclick="toggleSearch()"></i>
+            <div id="searchWrapper" class="nb-inner-wrap search-wrap border-box">
+              <div class="nb-inner sw-inner">
+                <div class="search-form mom-search-form">
+                  <form>
+                    <input class="sf" type="text" placeholder="Search ..." autocomplete="off" name="s">
+                    <button class="button" type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
       </div>
     </div>
   </header>
@@ -1553,7 +1564,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/gh/AhmedMRaihan/BanglaDateJS@master/src/buetDateTime.js"></script>
-  
+
 
 
 
@@ -1563,6 +1574,13 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/time.js"></script>
+  <script>
+    // Function to toggle the "sw-show" class
+    function toggleSearch() {
+      const searchWrapper = document.getElementById('searchWrapper');
+      searchWrapper.classList.toggle('sw-show');
+    }
+  </script>
   <script>
     jQuery(document).ready(function ($) {
       var rtl = false;
